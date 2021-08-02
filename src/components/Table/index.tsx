@@ -12,6 +12,7 @@ export interface TableProps {
   pagination?: boolean;
   msgTableVazia?: string;
   handleSelectItem?: (selectedRows: object) => void;
+  handleRowClicked?: (item: any) => void;
 }
 
 const Table = ({
@@ -38,11 +39,6 @@ const Table = ({
     selectAllRowsItem: false,
     selectAllRowsItemText: 'Todos'
   };
-
-  // Pega o item que foi clicado, nao precisa ser no checkbox
-  function handleRowClicked(item: any) {
-    console.log(item);
-  }
 
   const customStyles = {
     rows: {
