@@ -86,6 +86,7 @@ const Table = ({
         pointerOnHover
         selectableRowsHighlight
         customStyles={customStyles}
+        onRowClicked={handleRowClicked}
         // conditionalRowStyles={conditionalRowStyles}
         {...rest}
       />
